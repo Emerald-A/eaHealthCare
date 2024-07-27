@@ -15,7 +15,8 @@
    * COLORS
    */
 
-  --gold-crayola: hsl(38, 61%, 73%);
+  /* --gold-crayola: hsl(38, 61%, 73%); */
+  --gold-crayola: hsl(33, 86%, 62%);
   --quick-silver: hsla(0, 0%, 65%, 1);
   --davys-grey: hsla(30, 3%, 34%, 1);
   --smoky-black-1: hsla(40, 12%, 5%, 1);
@@ -742,7 +743,8 @@ body.nav-active {
 
 .navbar {
   position: fixed;
-  background-color: var(--smoky-black-1);
+  background-color: var(--eerie-black-4);
+  /* background-color: var(--smoky-black-1); */
   top: 0;
   left: -360px;
   bottom: 0;
@@ -1324,6 +1326,88 @@ body.nav-active {
 }
 
 /*-----------------------------------*\
+  #CountUp
+\*-----------------------------------*/
+
+.counter-wrapper {
+  background: url(/assets/images/bg2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 1.5rem;
+  padding: 10rem 9%;
+  margin-top: 5rem;
+  position: relative;
+}
+.counter-wrapper::before {
+  position: absolute;
+  content: "";
+  content: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+.counter {
+  text-align: center;
+  color: #ddd;
+  z-index: 2;
+  position: relative;
+}
+.counter::before {
+  position: absolute;
+  content: "";
+  bottom: -2rem;
+  left: 50%;
+  width: 20%;
+  height: 0.2rem;
+  background: #4db7fe;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+.counter .count {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+}
+.counter p {
+  font-size: 1.4rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+}
+@media (max-width: 768px) {
+  .counter-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 8rem;
+  }
+}
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+  .counter-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*-----------------------------------*\
   #RESERVATION
 \*-----------------------------------*/
 
@@ -1494,6 +1578,9 @@ textarea.input-field {
   #FOOTER
 \*-----------------------------------*/
 
+.footer {
+  background-color: var(--eerie-black-4);
+}
 .footer-top {
   margin-block-end: 70px;
 }
