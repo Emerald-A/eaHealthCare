@@ -34,6 +34,7 @@
     - custom css link
   -->
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/about.css">
 
     <!-- 
     - preload images
@@ -47,227 +48,143 @@
     <!-- 
     - #PRELOADER
   -->
-
     <div class="preload" data-preaload>
       <div class="circle"></div>
       <p class="text">Edmond Adedeji HealthCare Foundation</p>
     </div>
 
-    <!-- 
-    - #TOP BAR
-  -->
 
-    <div class="topbar">
-      <div class="container">
-        <address class="topbar-item">
-          <div class="icon">
-            <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
-          </div>
+    <!-- HEADER -->
+    <header class="myheader1">
+      <a href="index.html" class="logo">
+        <img
+          src="./assets/images/logo2.jpg"
+          width="100"
+          alt="EdHealthCare - Home"
+        />
+      </a>
 
-          <span class="span"> Lagos, Nigeria </span>
-        </address>
+      <div class="navigation">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <a href="index.html" class="navbar-link hover-underline">
+              <div class="separator"></div>
 
-        <div class="separator"></div>
-
-        <div class="topbar-item item-2">
-          <div class="icon">
-            <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
-          </div>
-
-          <span class="span">Daily : 8.00 am to 10.00 pm</span>
-        </div>
-
-        <a href="tel:+11234567890" class="topbar-item link">
-          <div class="icon">
-            <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
-          </div>
-
-          <span class="span">+234 000 000 0000</span>
-        </a>
-
-        <div class="separator"></div>
-
-        <a href="mailto:booking@restaurant.com" class="topbar-item link">
-          <div class="icon">
-            <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
-          </div>
-
-          <span class="span">info@edmondadedejihealthcare.com</span>
-        </a>
-      </div>
-    </div>
-
-    <!-- 
-    - #HEADER
-  -->
-
-    <header class="header" data-header>
-      <div class="container">
-        <a href="#" class="logo">
-          <img
-            src="./assets/images/logo2.jpg"
-            width="100"
-            height="50"
-            alt="EdHealthCare - Home"
-          />
-        </a>
-
-        <nav class="navbar" data-navbar>
-          <button class="close-btn" aria-label="close menu" data-nav-toggler>
-            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
-          </button>
-
-          <a href="#" class="logo">
-            <img
-              src="./assets/images/logo2.jpg"
-              width="160"
-              height="50"
-              alt="EdHealthCare - Home"
-            />
-          </a>
-
-          <ul class="navbar-list">
-            <li class="navbar-item">
-              <a href="#home" class="navbar-link hover-underline">
-                <div class="separator"></div>
-
-                <span class="span">Home</span>
-              </a>
-            </li>
-
-            <li class="navbar-item">
-              <a href="#menu" class="navbar-link hover-underline">
-                <div class="separator"></div>
-
-                <span class="span">Outreach</span>
-              </a>
-            </li>
-
-            <li class="navbar-item">
-              <a href="about.html" class="navbar-link hover-underline active">
-                <div class="separator"></div>
-
-                <span class="span">About Us</span>
-              </a>
-            </li>
-
-            <li class="navbar-item">
-              <a href="#" class="navbar-link hover-underline">
-                <div class="separator"></div>
-
-                <span class="span">Our Team</span>
-              </a>
-            </li>
-
-            <li class="navbar-item">
-              <a href="#" class="navbar-link hover-underline">
-                <div class="separator"></div>
-
-                <span class="span">Contact</span>
-              </a>
-            </li>
-          </ul>
-
-          <div class="text-center">
-            <p class="headline-1 navbar-title">Locate Us</p>
-
-            <address class="body-4">Lagos, Nigeria <br /></address>
-
-            <p class="body-4 navbar-text">Open: 9.30 am - 2.30pm</p>
-
-            <a href="mailto:booking@grilli.com" class="body-4 sidebar-link"
-              >support@edhealth.com</a
-            >
-
-            <div class="separator"></div>
-
-            <p class="contact-label">Call Center</p>
-
-            <a
-              href="tel:+88123123456"
-              class="body-1 contact-number hover-underline"
-            >
-              +0000 0000 0000
+              <span class="span">Home</span>
             </a>
-          </div>
-        </nav>
+          </li>
 
-        <a href="#" class="btn btn-secondary">
-          <span class="text text-1">Donate</span>
+          <li class="navbar-item">
+            <a href="#menu" class="navbar-link hover-underline">
+              <div class="separator"></div>
 
-          <span class="text text-2" aria-hidden="true">Donate</span>
-        </a>
+              <span class="span">Outreach</span>
+            </a>
+          </li>
 
-        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
-          <span class="line line-1"></span>
-          <span class="line line-2"></span>
-          <span class="line line-3"></span>
-        </button>
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link hover-underline active">
+              <div class="separator"></div>
 
-        <div class="overlay" data-nav-toggler data-overlay></div>
+              <span class="span">About Us</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Our Team</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Contact</span>
+            </a>
+          </li>
+        </ul>
       </div>
+
+      <button>DONATE</button>
     </header>
 
-    <main style="overflow-x: hidden">
-      <article>
-        <section style="">
-          <img src="./assets/images/abt1.jpg" alt="" />
-        </section>
-        <!-- <section class="w3l-servicesblock py-5" style="background: whitesmoke">
-          <div class="container py-md-5 py-4">
-            <div class="row pb-xl-5 align-items-center">
-              <div
-                class="col-lg-6 position-relative home-block-3-left pb-lg-0 pb-5"
-              >
-                <div class="position-relative">
-                  <img
-                    src="assets/images//about-banner.jpg"
-                    alt=""
-                    class="img-fluid radius-image"
-                  />
-                </div>
-                <div class="imginfo__box">
-                  <h6 class="imginfo__title">Get a Appointment Today!</h6>
-                  <p>
-                    Nemo enim ipsam oluptatem quia oluptas<br />
-                    sit aspernatur aut odit aut fugit.
-                  </p>
-                  <a href="tel:http://1(800)7654321"
-                    ><i class="fas fa-phone-alt"></i> 1-800-654-3210</a
-                  >
-                </div>
-              </div>
-              <div
-                class="col-xl-5 col-lg-6 offset-xl-1 mt-lg-0 mt-5 pt-lg-0 pt-5"
-              >
-                <h3 class="title-style mb-md-5 mb-4">
-                  A Warm <span>Welcome</span> and a Beautiful <span>Smile</span>
-                </h3>
-                <p class="sub-para">
-                  "Our clients are our priority, we offer quality dental
-                  services with a team of specialists. More details about our
-                  services below".
-                </p>
-                <p class="mt-4 pt-sm-2">
-                  Lorem ipsum viverra feugiat. Pellen tesque libero ut justo,
-                  ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor
-                  sit amet consectetur adipisicing elit.
-                </p>
-                <p class="mt-4 pt-sm-2">
-                  Sellen tesque libero ut justo, ultrices in ligula. Semper at
-                  tempufddfel. Lorem ipsum dolor sit amet consectetur
-                  adipisicing elit.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section> -->
-      </article>
-    </main>
+    <!-- ABOUT US SECTION -->
+    <section class="aboutus">
+      <div class="container">
+        <div class="aboutus-content">
+          <div class="text">
+            <h2>About Us</h2>
+            <p>Welcome to Edmond Adedeji Healthcare Foundation, a beacon of hope and care in the healthcare landscape. Our foundation is dedicated to improving the lives of individuals and communities through comprehensive healthcare services, education, and advocacy.</p>
 
-    <!-- 
-    - #BACK TO TOP
-  -->
+            <p>At Edmond Adedeji Healthcare Foundation, our mission is to provide accessible, high-quality healthcare to all, regardless of their socio-economic status. We strive to bridge the gap in healthcare disparities by offering compassionate care, innovative solutions, and relentless advocacy for those in need.</p>
+
+            <button>LEARN MORE</button>
+          </div>
+          <div class="image">
+            <img src="assets/images/abt1.jpg" alt="Healthcare Foundation">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OUR VISION SECTION -->
+    <section class="our-vision">
+      <div class="container">
+        <div class="our-vision-content">
+          <div class="text">
+            <h2>Our Vision</h2>
+            <p>We envision a world where every individual has the opportunity to lead a healthy, fulfilling life. Our vision is to create a sustainable healthcare ecosystem that promotes wellness, prevents illness, and empowers communities to thrive.</p>
+
+            <!-- <p>To create a world where every individual has equitable access to quality healthcare, empowering communities to live healthier, more fulfilling lives through innovation, compassion, and comprehensive care.</p> -->
+
+            <h2>Our Values</h2>
+            <p>Our work is guided by core values that reflect our commitment to excellence and compassion:</p>
+            <ul>
+              <li> <b>Integrity:</b> We uphold the highest standards of honesty and transparency in all our actions.</li>
+              <li> <b>Compassion:</b> We provide care with empathy and respect, valuing the dignity of every individual.</li>
+              <li> <b>Collaboration:</b> We believe in the power of partnerships and work closely with communities, healthcare professionals, and stakeholders.</li>
+              <li> <b>Innovation:</b> We embrace innovation to enhance our services and impact, always seeking better ways to serve our community.</li>
+            </ul>
+
+            <!-- <button>LEARN MORE</button> -->
+          </div>
+          
+          <div class="text">
+            <h2>What We Do</h2>
+            <p>Our foundation engages in a variety of initiatives aimed at improving public health and well-being. These include:
+              <ul>
+                <li> <b>Medical Services:</b> We offer free and affordable medical services, including primary care, specialized treatments, and emergency interventions, ensuring that no one is left behind.</li>
+                <li> <b>Health Education:</b> Through workshops, seminars, and community outreach programs, we educate individuals on preventive care, healthy lifestyles, and chronic disease management.</li>
+                <li> <b>Research and Innovation:</b> We invest in cutting-edge research and innovative healthcare solutions to address emerging health challenges and improve patient outcomes.</li>
+                <li> <b>Advocacy:</b> We advocate for health policies that promote equity and access to care, working with local, national, and international organizations to drive systemic change.</li>
+              </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GET INVOLVED SECTION -->
+    <section class="get-involved">
+      <div class="container">
+        <div class="get-involved-content">
+          <div class="text">
+            <h2>Get Involved</h2>
+            <p>We believe that everyone has a role to play in creating a healthier world. Whether through volunteering, donating, or partnering with us, there are many ways you can support our mission and make a difference.</p>
+
+            <p>Join us in our journey to transform healthcare and create lasting change. Together, we can build a healthier, brighter future for all.</p>
+
+            <p>Thank you for being a part of the <b>Edmund Adedeji Healthcare Foundation.</b></p>
+
+            <!-- <button>LEARN MORE</button> -->
+          </div>
+          
+        </div>
+      </div>
+    </section>
 
     <a
       href="#top"
